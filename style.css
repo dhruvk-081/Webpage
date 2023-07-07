@@ -140,7 +140,6 @@ body {
   width: 68%;
   height: 70vh;
   background-color: #fff;
-  border: 1px solid;
   border-radius: 10px;
 }
 
@@ -423,7 +422,7 @@ a.explore {
 }
 
 /* Low resolution Tablets and iPads */
-@media (min-width: 481px){
+@media (min-width: 481px) and (max-width: 1025px) {
   .header {
     height: auto;
   }
@@ -544,9 +543,50 @@ a.explore {
   }
 }
 
+@media (min-width: 1025px) and (max-width: 1200px) {
+  .header .text-content {
+    padding-top: 150px;
+    padding-left: 100px;
+    width: 70%;
+  }
 
-@media (min-width: 769px) and (max-width: 1200px){
+  .text-content p {
+    font-size: 2rem;
+    padding: 20px 0;
+  }
 
+  /* ########################################################## */
+
+  .section-one .top-heading {
+    margin: 1.5rem 1.5rem 0;
+    font-size: 1.5rem;
+    line-height: 1.2;
+  }
+  
+.readMore {
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+/* ############################################################### */
+
+.sectionTwo-LeftContent .headline {
+  font-size: 1.5rem;
+  line-height: 1.2;
+}
+
+.buyText {
+  font-size: 1.3rem;
+}
+.moreContent {
+  gap: 15px;
+  margin: 15px 0 0 0;
+}
+
+/* .moreContent svg{
+  width: 30px !important;
+  height: 30px !important;
+} */
 }
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
